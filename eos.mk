@@ -19,7 +19,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/onyx/onyx.mk)
 
 # Inherit some common EOS stuff.
+$(call inherit-product, vendor/eos/config/common.mk)
 $(call inherit-product, vendor/eos/config/common_full_phone.mk)
+
 PRODUCT_RELEASE_NAME := OnePlus X
 PRODUCT_NAME := eos_onyx
 PRODUCT_DEVICE := onyx
